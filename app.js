@@ -55,7 +55,7 @@ app.use('/news', newsRouter);
 app.use('/meals', mealsRouter);
 app.use('/contact', contactRouter);
 app.use('/about', aboutRouter);
-app.use('/api', apiRouter)
+app.use('/api', apiRouter);
 
 // catch unauthorized error and create 401
 app.use(function(err, req, res, next) {

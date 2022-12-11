@@ -76,7 +76,7 @@ const tripsAddTrip = async (req, res) => {
 
 
 const tripsUpdateTrip = async (req, res) => {
-    console.log(req.body);
+    //console.log(req);
     getUser(req, res,
         (req, res) => {
     Trip
@@ -135,7 +135,6 @@ const tripsDeleteTrip = async (req, res) => {
 };
  
 const getUser = (req, res, callback) => {
-    console.log(req);
     if (req.auth && req.auth.email) {
         User
             .findOne({ email: req.auth.email })
